@@ -1,0 +1,148 @@
+.main {
+  background: linear-gradient(0deg, #040507 0% , #19222E 100%);
+}
+
+
+.headercontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #19222E;
+  padding:15px;
+}
+
+.gencontainer{
+  display: flex;
+  gap: 20px;
+}
+
+.genzedu {
+  font-size: 40px;
+  font-weight: bold;
+  
+}
+
+.help {
+  font-size: 15px;
+  margin-top: 28px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.button {
+  background-color: #d1ccc0;
+  color: #222;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+
+.searchContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  gap: 20px;
+  
+}
+
+.heading {
+  color: #d1ccc0;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.searchBox {
+  display: flex;
+  align-items: center;
+  background-color: rgba(4, 5, 7, 0.4);
+  padding: 10px;
+  border-radius: 50px;
+  border: 1px solid #d1ccc0;
+  width: 800px;
+  height: 50px;
+}
+
+.searchInput {
+  border: none;
+  background: none;
+  outline: none;
+  padding: 10px;
+  flex: 1;
+  color: #fff;
+  font-size: 16px;
+}
+
+.searchButton {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.searchButton:hover {
+  color: #ccc; /* Lighter color on hover */
+}
+
+.searchInput::placeholder {
+  color: #ccc;
+}
+
+
+
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #111; /* Dark background */
+}
+
+.faq-heading {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.faq-item {
+  width: 100%;
+  max-width: 600px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.faq-item:hover {
+  background-color: #333; /* Slightly lighter on hover */
+}
+
+.faq-question {
+  color: #fff;
+  font-size: 18px;
+}
+
+.faq-icon {
+  color: #fff;
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(180deg); /* Rotate icon on active state */
+}
