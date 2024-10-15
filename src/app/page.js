@@ -12,22 +12,22 @@ export default function Home() {
              <div className={styles.help}> help and support </div>
           </div>
         <div className={styles.buttons}>
-         <button className={styles.button}>Sign in</button>
-         <button className={styles.button}>Register</button>
+         <button className={styles.button1}>Sign in</button>
+         <button className={styles.button2}>Register</button>
         </div>
       </div>
 
       <div className={styles.searchContainer}>
-      <h2 className={styles.heading}>How can we help you today?</h2>
+        <h2 className={styles.heading}>How can we help you today?</h2>
        <div className={styles.searchBox}>
-        <input
-          type="text"
-          placeholder="Search here..."
-          className={styles.searchInput}
-        />
-        <button className={styles.searchButton}>
-          <i className="fa fa-search"></i>
-        </button>
+          <input
+            type="text"
+            placeholder="Search here..."
+            className={styles.searchInput}
+          />
+          <button className={styles.searchButton}>
+            <i className="fa fa-search"></i>
+          </button>
        </div>
       </div>
      

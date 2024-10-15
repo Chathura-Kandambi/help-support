@@ -1,52 +1,57 @@
 .faqContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  .faqHeading {
-    color: #fff;
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .faqItem {
-    width: 100%;
-    max-width: 600px;
-    background-color: #1e1e1e;
-    border-radius: 10px;
-    padding: 15px;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .faqItem:hover {
-    background-color: #333; /* Slightly lighter on hover */
-  }
-  
-  .faqQuestion {
-    color: #fff;
-    font-size: 18px;
-  }
-  
-  .faqIcon {
-    color: #fff;
-    font-size: 18px;
-    transition: transform 0.3s ease;
-  }
-  
-  .active .faqIcon {
-    transform: rotate(180deg); /* Rotate icon on active state */
-  }
-  
-  .faqAnswer {
-    color: #ccc;
-    margin-top: 10px;
-    font-size: 16px;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.faqHeading {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.faqList {
+  width: 100%;
+  max-width: 600px;
+}
+
+.faqItem {
+  width: 100%;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.faqItem:hover {
+  background-color: #333;
+}
+
+.faqQuestion {
+  display: flex;
+  justify-content: space-between; /* This aligns the icon to the right */
+  align-items: center;
+  color: #fff;
+  font-size: 18px;
+}
+
+.faqIcon {
+  color: #fff;
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.active .faqIcon {
+  transform: rotate(180deg);
+}
+
+.faqAnswer {
+  color: #ccc;
+  margin-top: 10px;
+  font-size: 16px;
+  padding-top: 10px;
+  border-top: 1px solid #333; /* Optional: separate answer from question */
+}
