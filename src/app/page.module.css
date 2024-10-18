@@ -1,31 +1,30 @@
 .main {
   background: linear-gradient(to bottom, #2d3748, #01000f);
   color: #ffffff;
-  
 }
 
-
+/* Header Container */
 .headercontainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #161c28;
-  padding:15px;
+  padding: 15px;
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
 }
 
-.gencontainer{
+.gencontainer {
   display: flex;
   gap: 20px;
 }
 
 .genzedu {
-  font-size: 40px;
+  font-size: 2.5rem; /* Adjust for better scaling */
   font-weight: bold;
-  
 }
 
 .help {
-  font-size: 15px;
+  font-size: 1rem;
   margin-top: 28px;
 }
 
@@ -34,36 +33,34 @@
   gap: 10px;
 }
 
-.button1 {
+.button1,
+.button2 {
   background-color: #1e55bb;
   color: #ffffff;
   border: none;
   border-radius: 10px;
   padding: 10px 20px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 1rem;
 }
+
+.button1 {
+  background-color: #1e55bb;
+}
+
 .button2 {
   background-color: #169d45;
-  color: #ffffff;
-  border: none;
-  border-radius: 10px;
-  padding: 10px 20px;
-  cursor: pointer;
-  font-size: 16px;
 }
 
-
-
-.button1:hover{
+.button1:hover {
   background-color: #2e79e3;
 }
-.button2:hover{
+
+.button2:hover {
   background-color: #28cb5e;
 }
 
-
-
+/* Search Container */
 .searchContainer {
   display: flex;
   flex-direction: column;
@@ -71,23 +68,25 @@
   justify-content: center;
   height: 50vh;
   gap: 20px;
-  
+  padding: 0 15px; /* Padding for smaller screens */
 }
 
 .heading {
   color: #d1ccc0;
-  font-size: 40px;
+  font-size: 2.5rem; /* Adjust font size for responsiveness */
   margin-bottom: 20px;
+  text-align: center; /* Center text for smaller devices */
 }
 
 .searchBox {
   display: flex;
   align-items: center;
-  background-color: rgba(4, 5, 7, 0.4);
+  background-color: #161c28;
   padding: 10px;
   border-radius: 50px;
-  border: 1px solid #d1ccc0;
-  width: 800px;
+  border: 1px solid #2d3748;
+  width: 100%;
+  max-width: 800px;
   height: 50px;
 }
 
@@ -110,12 +109,105 @@
 }
 
 .searchButton:hover {
-  color: #ccc; /* Lighter color on hover */
+  color: #ccc;
 }
 
 .searchInput::placeholder {
   color: #ccc;
 }
 
+/* Media Queries for Responsive Design */
+@media (max-width: 1024px) {
+  .genzedu {
+    font-size: 2rem; /* Adjust font size for tablets */
+  }
 
+  .buttons {
+    flex-wrap: wrap; /* Stack buttons on smaller screens */
+  }
 
+  .searchBox {
+    max-width: 600px;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .headercontainer {
+    flex-direction: row; /* Ensure it's a single row */
+    justify-content: space-around; /* Distribute space evenly */
+  }
+
+  .gencontainer {
+    flex-direction: row; /* Ensure containers are in a single row */
+    gap: 10px; /* Reduce the gap between items for smaller screens */
+    align-items: center; /* Align elements vertically */
+  }
+
+  .buttons {
+    flex-direction: row; /* Keep buttons in a row */
+    gap: 5px; /* Reduce gap between buttons for smaller devices */
+  }
+
+  .genzedu {
+    font-size: 1.75rem; /* Adjust font size for better fit */
+  }
+
+  .help {
+    font-size: 0.875rem;
+  }
+
+  .searchBox {
+    max-width: 100%; /* Full width for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .headercontainer {
+    flex-direction: row; /* Keep everything in a row */
+    justify-content: space-between; /* Align items with space between them */
+    padding: 10px; /* Reduce padding for small screens */
+  }
+
+  .gencontainer {
+    flex-direction: row; /* Ensure items stay in a row */
+    gap: 5px; /* Further reduce gap */
+  }
+
+  .buttons {
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  .genzedu {
+    font-size: 1.5rem; /* Smaller font size for very small screens */
+  }
+
+  .help {
+    font-size: 0.75rem;
+  }
+
+  .button1, .button2 {
+    font-size: 0.875rem;
+    padding: 8px 15px;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .searchBox {
+    height: 45px;
+  }
+
+  .searchInput {
+    font-size: 0.875rem;
+  }
+
+  .searchButton {
+    font-size: 18px;
+  }
+}
